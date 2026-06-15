@@ -1,0 +1,86 @@
+/*Global reset: this removes the default browser spacing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styling: centers the weather card*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;/*full screen height*/
+    background-color: #87ceeb;
+    font-family: Arial, sans-serif;
+}
+
+/*the main weather card styling*/
+.container {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/*main heading*/
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/*search section*/
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/*city input field*/
+#cityInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+/*highlight input when user selects it*/
+#cityInput:focus {
+    border-color: #3498db;;
+}
+
+/*search button styling*/
+#searchBtn {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/*button hover effect*/
+#searchBtn:hover {
+    background-color: #2980b9;
+}
+
+/*weather information section*/
+.weather-info {
+    margin-top: 20px;
+}
+/*city name*/
+#cityName {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+/*weather details*/
+#weather-info {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
